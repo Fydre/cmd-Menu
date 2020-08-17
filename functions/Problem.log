@@ -1,0 +1,8 @@
+if "%loggedin%==false" if not "%password%==configNoPasswordSet" (
+	set /p conUser=Enter the Password:
+	if "%conUser%==%password%" echo true>loggedin.bool & start console.bat & exit
+	echo Wrong Password.
+	powershell -command sleep %sleepseconds%
+	set /a sleepseconds+=%sleepseconds%
+	goto ifretry
+)
