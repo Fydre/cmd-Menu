@@ -24,7 +24,7 @@ if exist selector.char (
 ) else set cursor=■
 if exist colors.clr (
 	for /f "Delims=" %%d in (colors.clr) do (
-		color %%d
+		color %%d >nul
 		set dClr=%%d
 	)
 ) else (
