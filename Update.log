@@ -1,0 +1,9 @@
+** Bug Fixes**
+- Explorer crashing on a directory with a   in the name
+- Unicode Search crashing on input
+- Some minor error messages
+- Wrong color error
+
+** Content **
+- A new game
+- Animation Maker App (Work in Progress)
