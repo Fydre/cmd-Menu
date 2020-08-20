@@ -10,9 +10,6 @@ set /A AP=%RANDOM% * 10 / 32768 + 1 >nul
 set BP=95
 set score=0
 color ff
-if exist applehighscore.sec (
-	for /f "Delims=" %%a in (applehighscore.sec) do set hscore=%%a
-) else set hscore=0
 :display
 color ff
 cls
@@ -29,7 +26,7 @@ echo [1;37;44m▓[0m%g51%%g52%%g53%%g54%%g55%%g56%%g57%%g58%%g59%%g60%[1;37;4
 echo [1;37;44m▓[0m%g61%%g62%%g63%%g64%%g65%%g66%%g67%%g68%%g69%%g70%[1;37;44m▓[0m
 echo [1;37;44m▓[0m%g71%%g72%%g73%%g74%%g75%%g76%%g77%%g78%%g79%%g80%[1;37;44m▓[0m
 echo [1;37;44m▓[0m%g81%%g82%%g83%%g84%%g85%%g86%%g87%%g88%%g89%%g90%[1;37;44m▓[0m
-echo [1;37;44m▓[0m%g91%%g92%%g93%%g94%%g95%%g96%%g97%%g98%%g99%%g100%▓[0m
+echo [1;37;44m▓[0m%g91%%g92%%g93%%g94%%g95%%g96%%g97%%g98%%g99%%g100%[1;37;44m▓[0m
 echo [1;37;44m▓▓▓▓▓▓▓▓▓▓▓▓[0m
 if %score% lss 10 (
 	ping localhost -n 1 >nul
